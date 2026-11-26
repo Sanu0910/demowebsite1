@@ -1,0 +1,22 @@
+{
+  "name": "trekking-buddha-remotion",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Trekking Buddha promo videos and social banners built with Remotion",
+  "scripts": {
+    "dev": "remotion studio",
+    "render:reel": "remotion render PromoReel out/promo-reel.mp4",
+    "render:landscape": "remotion render PromoLandscape out/promo-landscape.mp4",
+    "render:banners": "remotion still FacebookCover out/facebook-cover.png && remotion still InstagramPost out/instagram-post.png && remotion still YouTubeBanner out/youtube-banner.png && remotion still WebsiteHero out/website-hero.png",
+    "render:all": "npm run render:reel && npm run render:landscape && npm run render:banners"
+  },
+  "dependencies": {
+    "@remotion/cli": "^4.0.242",
+    "@remotion/fonts": "^4.0.242",
+    "@types/react": "^18.3.12",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "remotion": "^4.0.242",
+    "typescript": "^5.6.3"
+  }
+}

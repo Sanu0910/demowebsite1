@@ -1,0 +1,317 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Trekking Buddha — Himalayan Treks in Nepal &amp; India</title>
+  <meta name="description" content="Certified mountaineers, registered guides and a medical team. Trekking Buddha has guided adventurous treks across Nepal and India since 2021 — Sandakphu, Everest Base Camp, Annapurna, Goechala and more." />
+  <meta name="theme-color" content="#0b1220" />
+  <link rel="icon" href="assets/brand/favicon.jpeg" />
+  <meta property="og:title" content="Trekking Buddha — Walk the Himalayas" />
+  <meta property="og:description" content="Treks across Nepal and India since 2021. Certified mountaineers • Registered guides • Medical team." />
+  <meta property="og:image" content="assets/img/photos/meditate.webp" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,800;1,9..144,400&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<!-- ============ NAV + MOUNTAIN PROGRESS BAR ============ -->
+<header class="nav" id="nav">
+  <div class="nav__inner">
+    <a href="#top" class="brand" aria-label="Trekking Buddha home">
+      <span class="brand__badge"><img src="assets/brand/logo.png" alt="The Trekking Buddha logo" width="517" height="483" /></span>
+      <span class="brand__name">Trekking <em>Buddha</em></span>
+    </a>
+    <nav class="nav__links" id="navLinks" aria-label="Primary">
+      <a href="#journey">Journey</a>
+      <a href="#departures">Departures</a>
+      <a href="#treks">Treks</a>
+      <a href="#story">Our Story</a>
+      <a href="#frames">Story-Trails</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a class="btn btn--saffron nav__cta" href="https://wa.me/919932141614" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.7.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.5-.3Z"/></svg>
+      Chat with us
+    </a>
+    <button class="nav__burger" id="burger" aria-label="Open menu" aria-expanded="false"><span></span><span></span></button>
+  </div>
+  <!-- The "bar": a mountain ridge that fills as you scroll, with the Buddha walking along it -->
+  <div class="ridgebar" aria-hidden="true">
+    <svg class="ridgebar__svg" viewBox="0 0 1000 30" preserveAspectRatio="none">
+      <defs><clipPath id="ridgeClip"><rect id="ridgeClipRect" x="0" y="0" width="0" height="30" /></clipPath></defs>
+      <path id="ridgeBase" class="ridgebar__base" d="" />
+      <path id="ridgeFill" class="ridgebar__fill" d="" clip-path="url(#ridgeClip)" />
+    </svg>
+    <div class="ridgebar__walker" id="miniWalker"></div>
+  </div>
+</header>
+
+<main id="top">
+
+<!-- ============ HERO ============ -->
+<section class="hero">
+  <div class="hero__bg" style="background-image:url('assets/img/photos/meditate.webp')"></div>
+  <div class="hero__shade"></div>
+  <div class="container hero__content">
+    <p class="eyebrow reveal">Nepal · India · Since 2021</p>
+    <h1 class="hero__title reveal">Walk the Himalayas.<br /><em>Find your stillness.</em></h1>
+    <p class="hero__lead reveal">From adventurous mountaineering to soulful treks across Nepal and India. Small groups, offbeat trails, and guides who live for the mountains.</p>
+    <div class="hero__actions reveal">
+      <a href="#treks" class="btn btn--saffron btn--lg">Explore treks 2026–27</a>
+      <a href="#journey" class="btn btn--ghost btn--lg">Walk with the Buddha ↓</a>
+    </div>
+    <ul class="trust reveal">
+      <li><span>⛰</span>Certified Mountaineer</li>
+      <li><span>🪪</span>Registered Guide</li>
+      <li><span>⛑</span>Medical Team</li>
+    </ul>
+  </div>
+  <div class="hero__scroll" aria-hidden="true"><span></span></div>
+</section>
+
+<!-- ============ SCROLL JOURNEY: THE BUDDHA WALKS THE MOUNTAINS ============ -->
+<section class="journey" id="journey" aria-label="Scroll journey through the mountains">
+  <div class="journey__sticky">
+    <div class="sky" id="sky">
+      <div class="stars" id="stars"></div>
+      <div class="sun" id="sun"></div>
+    </div>
+    <svg class="layer layer--far" id="layerFar" viewBox="0 0 4000 1000" preserveAspectRatio="xMinYMax slice" aria-hidden="true"></svg>
+    <div class="mist mist--1"></div>
+    <svg class="layer layer--mid" id="layerMid" viewBox="0 0 4000 1000" preserveAspectRatio="xMinYMax slice" aria-hidden="true"></svg>
+    <div class="mist mist--2"></div>
+    <svg class="layer layer--trail" id="layerTrail" viewBox="0 0 4000 1000" preserveAspectRatio="xMinYMax slice" aria-hidden="true">
+      <g id="trailDecor"></g>
+      <path id="trailGround" class="trail__ground" d="" />
+      <path id="trailPath" class="trail__path" d="" />
+      <g id="trailFront"></g>
+      <g id="bigWalker"></g>
+    </svg>
+
+    <div class="journey__hud">
+      <div class="hud__alt"><span id="altVal">2,000</span><small> m</small><em>altitude</em></div>
+      <div class="hud__steps" id="hudSteps"></div>
+    </div>
+
+    <div class="journey__panel" id="journeyPanel" aria-live="polite">
+      <p class="panel__kicker" id="panelKicker">01 / 05 · The first step</p>
+      <h2 class="panel__title" id="panelTitle">Every summit begins at the trailhead.</h2>
+      <p class="panel__text" id="panelText">Keep scrolling — walk the trail with the Trekking Buddha.</p>
+      <a href="#departures" class="btn btn--saffron panel__cta" id="panelCta" hidden>See next departures</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ STATS STRIP ============ -->
+<section class="stats">
+  <div class="container stats__grid">
+    <div class="stat reveal"><b data-count="1252">0</b><span>happy trekkers since 2024</span></div>
+    <div class="stat reveal"><b data-count="9">0</b><span>signature Himalayan treks</span></div>
+    <div class="stat reveal"><b data-count="950">0</b><span>days the founder cycled across India</span></div>
+    <div class="stat reveal"><b data-count="22" data-suffix="+">0</b><span>lives supported in remote villages</span></div>
+  </div>
+</section>
+
+<!-- ============ DEPARTURES ============ -->
+<section class="section section--dark" id="departures">
+  <div class="container">
+    <div class="section__head reveal">
+      <p class="eyebrow">Winter 2026 – 27</p>
+      <h2 class="h2">Next departures. <em>Seats are limited.</em></h2>
+      <p class="muted">Fixed-departure group treks. Tap a date to reserve your spot on WhatsApp.</p>
+    </div>
+    <div class="departures">
+      <article class="dep reveal">
+        <div class="dep__img"><img src="assets/img/posters/mardi.webp" alt="Mardi Himal trek poster with Mt Fishtail at sunset" loading="lazy" /></div>
+        <div class="dep__body">
+          <p class="tag">Nepal · Mt Fishtail</p>
+          <h3>Mardi Himal Trek</h3>
+          <div class="dates"><button class="date" data-trek="Mardi Himal Trek" data-date="Dec 28 – Jan 02">Dec 28 – Jan 02</button></div>
+        </div>
+      </article>
+      <article class="dep reveal">
+        <div class="dep__img"><img src="assets/img/posters/sandakphu.webp" alt="Sandakphu Phalut trek poster, Sleeping Buddha" loading="lazy" /></div>
+        <div class="dep__body">
+          <p class="tag">India · Sleeping Buddha view</p>
+          <h3>Sandakphu – Phalut Trek</h3>
+          <div class="dates">
+            <button class="date" data-trek="Sandakphu Phalut Trek" data-date="Dec 26 – Jan 01">Dec 26 – Jan 01</button>
+            <button class="date" data-trek="Sandakphu Phalut Trek" data-date="Jan 02 – 08">Jan 02 – 08</button>
+            <button class="date" data-trek="Sandakphu Phalut Trek" data-date="Jan 23 – 29">Jan 23 – 29</button>
+          </div>
+        </div>
+      </article>
+      <article class="dep reveal">
+        <div class="dep__img"><img src="assets/img/posters/abc.webp" alt="Annapurna Base Camp trek poster" loading="lazy" /></div>
+        <div class="dep__body">
+          <p class="tag">Nepal · Mt Annapurna</p>
+          <h3>Annapurna Base Camp Trek</h3>
+          <div class="dates">
+            <button class="date" data-trek="Annapurna Base Camp Trek" data-date="Dec 05 – 14">Dec 05 – 14</button>
+            <button class="date" data-trek="Annapurna Base Camp Trek" data-date="Dec 26 – Jan 04">Dec 26 – Jan 04</button>
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TREKS ============ -->
+<section class="section section--cream" id="treks">
+  <div class="container">
+    <div class="section__head section__head--row reveal">
+      <div>
+        <p class="eyebrow eyebrow--dark">Treks 2027</p>
+        <h2 class="h2">Choose your <em>mountain.</em></h2>
+      </div>
+      <div class="chips" role="tablist" aria-label="Filter treks by country">
+        <button class="chip is-active" data-filter="all" role="tab" aria-selected="true">All</button>
+        <button class="chip" data-filter="nepal" role="tab" aria-selected="false">Nepal</button>
+        <button class="chip" data-filter="india" role="tab" aria-selected="false">India</button>
+      </div>
+    </div>
+    <div class="treks" id="trekGrid"></div>
+  </div>
+</section>
+
+<!-- ============ WHY US ============ -->
+<section class="section section--dark why">
+  <div class="container">
+    <div class="section__head reveal">
+      <p class="eyebrow">Why trek with us</p>
+      <h2 class="h2">Mountains, <em>done right.</em></h2>
+    </div>
+    <div class="why__grid">
+      <div class="card reveal"><div class="card__icon">⛰</div><h3>Certified mountaineers</h3><p>Trained at the Himalayan Mountaineering Institute and NIMAS. Our founder taught as an instructor at HMI, Darjeeling.</p></div>
+      <div class="card reveal"><div class="card__icon">🪪</div><h3>Registered guides</h3><p>Every group is led by registered guides who know the trails, the weather and the local communities.</p></div>
+      <div class="card reveal"><div class="card__icon">⛑</div><h3>Medical team on trail</h3><p>Safety first, always. A medical team, skill-based briefings and responsible acclimatisation on every trek.</p></div>
+      <div class="card reveal"><div class="card__icon">🤝</div><h3>Responsible tourism</h3><p>Your trek supports people and families in remote villages. We never ask for extra donations — your booking covers it.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ STORY ============ -->
+<section class="section section--ink" id="story">
+  <div class="container story">
+    <div class="story__media reveal">
+      <img src="assets/img/photos/pandim.webp" alt="Mount Pandim at dusk" loading="lazy" />
+      <div class="story__badge"><b>Since</b><span>2021</span></div>
+    </div>
+    <div class="story__text">
+      <p class="eyebrow reveal">Our story</p>
+      <h2 class="h2 reveal">It began with <em>950 days</em> on a bicycle.</h2>
+      <p class="reveal">Founder <strong>Jyotishko Biswas</strong> spent nearly 950 days cycling across India, completing over 35 treks through some of the country's most untouched trails. During the COVID years, a small group of explorers followed him into the pristine forests of Meghalaya — and a modest $20 tip for guiding revealed something bigger: people were searching for authentic, well-guided trekking rooted in knowledge and responsibility.</p>
+      <ol class="timeline">
+        <li class="reveal"><b>950 days</b><span>Cycling across India · 35+ treks on foot</span></li>
+        <li class="reveal"><b>Training</b><span>Himalayan Mountaineering Institute &amp; NIMAS</span></li>
+        <li class="reveal"><b>Instructor</b><span>Taught aspiring mountaineers at HMI, Darjeeling</span></li>
+        <li class="reveal"><b>2021</b><span>Trekking Buddha is born — offbeat, skill-based, responsible</span></li>
+      </ol>
+      <a class="link reveal" href="https://jyotishkobiswas.com/" target="_blank" rel="noopener">Read Jyotishko's journey →</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ QUOTE ============ -->
+<section class="quote">
+  <div class="quote__bg" style="background-image:url('assets/img/photos/winter.webp')"></div>
+  <div class="container quote__inner reveal">
+    <p class="quote__text">“Mount Kanchenjunga inspires us to rise up in our lives, to touch the soul with the divine, and to return to nature — to find the meaning of life.”</p>
+    <p class="quote__by">— The Trekking Buddha philosophy, inspired by Bibhutibhushan Bandyopadhyay</p>
+  </div>
+</section>
+
+<!-- ============ STORY-TRAILS GALLERY ============ -->
+<section class="section section--dark" id="frames">
+  <div class="container">
+    <div class="section__head section__head--row reveal">
+      <div>
+        <p class="eyebrow">Story-Trails</p>
+        <h2 class="h2">Frames from <em>the trail.</em></h2>
+      </div>
+      <div class="chips chips--dark" role="tablist" aria-label="Filter gallery by year">
+        <button class="chip is-active" data-year="2026" role="tab" aria-selected="true">2026 · 477</button>
+        <button class="chip" data-year="2025" role="tab" aria-selected="false">2025 · 444</button>
+        <button class="chip" data-year="2024" role="tab" aria-selected="false">2024 · 331</button>
+      </div>
+    </div>
+    <p class="gallery__caption muted" id="galleryCaption">Footsteps &amp; Frames — 477 trekkers walked with us in 2026.</p>
+    <div class="gallery" id="gallery"></div>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section class="section section--cream" id="contact">
+  <div class="container contact">
+    <div class="contact__intro reveal">
+      <p class="eyebrow eyebrow--dark">Plan your trek</p>
+      <h2 class="h2">Your summit <em>is calling.</em></h2>
+      <p>Tell us where you dream of walking. Team Trekking Buddha usually replies within a few hours.</p>
+      <ul class="contact__list">
+        <li><a href="https://wa.me/919932141614" target="_blank" rel="noopener"><span>💬</span><div><b>WhatsApp</b>+91 99321 41614</div></a></li>
+        <li><a href="tel:+919932141614"><span>📞</span><div><b>Call us</b>+91 99321 41614</div></a></li>
+        <li><a href="mailto:info@trekkingbuddha.com"><span>✉️</span><div><b>Email</b>info@trekkingbuddha.com</div></a></li>
+        <li><div class="contact__addr"><span>📍</span><div><b>Office</b>5 Anandapally Main, Nadia 741152, West Bengal, India</div></div></li>
+      </ul>
+    </div>
+    <form class="form reveal" id="enquiry">
+      <h3>Quick enquiry</h3>
+      <label>Your name<input name="name" required placeholder="e.g. Ananya Sen" /></label>
+      <label>Which trek?
+        <select name="trek" id="trekSelect"><option>Not sure yet — help me choose</option></select>
+      </label>
+      <div class="form__row">
+        <label>Month<input name="month" placeholder="e.g. January" /></label>
+        <label>Group size<input name="size" type="number" min="1" value="1" /></label>
+      </div>
+      <label>Message<textarea name="msg" rows="3" placeholder="Fitness level, questions, special requests…"></textarea></label>
+      <button class="btn btn--saffron btn--lg btn--block" type="submit">Send on WhatsApp</button>
+      <p class="form__note">Opens WhatsApp with your details pre-filled.</p>
+    </form>
+  </div>
+</section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="container footer__grid">
+    <div>
+      <a href="#top" class="brand brand--footer">
+        <span class="brand__badge brand__badge--lg"><img src="assets/brand/logo.png" alt="The Trekking Buddha logo" width="517" height="483" loading="lazy" /></span>
+      </a>
+      <p class="muted">Adventurous mountaineering and trekking across Nepal and India since 2021.</p>
+    </div>
+    <div>
+      <h4>Explore</h4>
+      <a href="#treks">Treks</a><a href="#departures">Departures</a><a href="#story">About</a><a href="#frames">Story-Trails</a>
+    </div>
+    <div>
+      <h4>Contact</h4>
+      <a href="tel:+919932141614">+91 99321 41614</a><a href="mailto:info@trekkingbuddha.com">info@trekkingbuddha.com</a><span class="muted">Nadia 741152, West Bengal, India</span>
+    </div>
+    <div>
+      <h4>Follow</h4>
+      <a href="https://www.facebook.com/thetrekkingbuddha/" target="_blank" rel="noopener">Facebook</a>
+      <a href="https://www.instagram.com/the_trekking_buddha/" target="_blank" rel="noopener">Instagram</a>
+      <a href="https://www.youtube.com/@JyotishkoBiswasIndia" target="_blank" rel="noopener">YouTube</a>
+    </div>
+  </div>
+  <div class="container footer__bottom"><span>© 2026 Trekking Buddha</span><a href="#top">Back to top ↑</a></div>
+</footer>
+
+<a class="fab" href="https://wa.me/919932141614" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+  <svg viewBox="0 0 24 24" width="28" height="28" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm4.5 12.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.7.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.5-.3Z"/></svg>
+</a>
+
+<div class="lightbox" id="lightbox" hidden>
+  <button class="lightbox__close" aria-label="Close">×</button>
+  <img alt="" id="lightboxImg" />
+</div>
+
+<script src="main.js"></script>
+</body>
+</html>
