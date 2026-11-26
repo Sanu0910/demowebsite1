@@ -16,7 +16,7 @@ The original logo is used **unchanged**. Photos are Trekking Buddha's own.
 
 Video storyboard: logo intro over night mountains → the Buddha walks the ridge with an altitude counter → trek photos (Sandakphu, Mardi Himal, ABC, EBC) → departure dates → summit sunrise with WhatsApp CTA.
 
-Ready-made renders are in [`renders/`](renders/).
+Ready-made banner images are in [`renders/`](renders/). Video files are not included for now; render them with `npm run render:reel` if you need them later.
 
 ## Use
 ```bash

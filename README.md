@@ -3,7 +3,7 @@
 A modern redesign proposal for [trekkingbuddha.com](https://trekkingbuddha.com/), in two parts:
 
 1. **Website** (repo root): plain HTML/CSS/JS, no build step.
-2. **[`remotion/`](remotion/)**: promo videos and social banners built with Remotion. Ready renders are in [`remotion/renders/`](remotion/renders/).
+2. **[`remotion/`](remotion/)**: social banner pictures (Facebook cover, YouTube banner, Instagram post, website hero) built with Remotion. Ready images are in [`remotion/renders/`](remotion/renders/).
 
 All photos, trek posters and the logo belong to Trekking Buddha and come from the current site. The logo is used **unchanged**.
 
@@ -25,10 +25,10 @@ Then open http://localhost:8080
 ## Publish with GitHub Pages
 Settings → Pages → Source: *Deploy from a branch* → `main` / `(root)`. The site will be live at `https://<user>.github.io/demowebsite1/`.
 
-## Videos and banners
+## Banners
 ```bash
 cd remotion
 npm install
 npm run dev          # preview in Remotion Studio
-npm run render:all   # render MP4s and PNGs into out/
+npm run render:banners   # render the PNG banners into out/
 ```
